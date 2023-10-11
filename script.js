@@ -16,7 +16,7 @@ function shoChangLangDiv() {
 
 
     const loadingSpinnerDiv = document.getElementById("loadingSpinnerDiv");
-    const changeLanguage = document.getElementById("changeLang");
+    const changeLanguage = document.getElementById("Langname");
     const languagesDiv = document.getElementById("languagesDiv");
     const LanguageButton = document.querySelectorAll(".lang");
     const translateLang = document.getElementById("language")
@@ -29,7 +29,7 @@ function shoChangLangDiv() {
         button.addEventListener('click', () => {
             const usersLang = button.value;
             translateLang.innerText = button.innerText;
-            langName.innerText = button.innerText;
+            changeLanguage.innerText = button.innerText;
             setTimeout(() => {
                 languagesDiv.style.display = 'none';
 
