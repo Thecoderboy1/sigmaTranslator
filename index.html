@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="style.css">
+    <title>Google Translate</title>
+</head>
+
+<body>
+    <main>
+        <div class="languagesDiv pop-up" id="languagesDiv">
+                <div class="divTitle">
+                    <span>Choose a language</span>
+                </div>
+                <hr>
+            <ul>
+                <li><button class="lang" value="ar">Arabic</button></li>
+                <li><button class="lang" value="en">Englilsh</button></li>
+                <li><button class="lang" value="fr">French</button></li>
+                <li><button class="lang" value="hi">Hindi</button></li>
+                <li><button class="lang" value="ur">Urdu</button></li>
+            </ul>
+        </div>
+        <div class="loadingSpinnerDiv" id="loadingSpinnerDiv">
+            <span class="loader"></span>
+            <strong>Please Wait</strong>
+        </div>
+        <section class="appLayout">
+            <div class="heading">
+                <nav>
+                    <div class="icons">
+                        <span class="material-symbols-outlined gIcons">
+                            book_2
+                        </span>
+                    </div>
+                    <div class="name">
+                        <span>Sigma</span> Translate
+                    </div>
+                    <div class="profile">
+                        <span class="material-symbols-outlined gIcons">
+                            account_circle
+                        </span>
+                    </div>
+                </nav>
+                <hr>
+            </div>
+            <div class="mainContent">
+                <div class="usersInputDiv">
+                    <span>English</span>
+                    <textarea name="Sentence" id="usersInput" cols="30" rows="10" placeholder="Enter text"></textarea>
+                </div>
+                <div class="usersOutputDiv">
+                    <div class="langName">
+                        <span id="language">Hindi</span>
+                    </div>
+                    <textarea id="answer" cols="30" rows="3" placeholder="Answer Here"></textarea>
+                </div>
+                <div class="languageSetting">
+                    <div class="languages">
+                        <button>English</button>
+                        <span class="material-symbols-outlined">
+                            arrow_right_alt
+                        </span>
+                        <button id="Langname">Hindi</button>
+                    </div>
+                </div>
+            </div>
+ 
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
